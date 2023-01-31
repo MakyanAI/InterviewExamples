@@ -9,7 +9,7 @@ public class NonThreadSafeClass {
             new Thread(new Runnable() {
                 @Override
                 public void run() {
-                    for (int j = 0; j < 50000; j++){
+                    for (int j = 0; j < 5000; j++){
                         stringBuilder.append("1");
                         stringBuffer.append("1");
                     }
